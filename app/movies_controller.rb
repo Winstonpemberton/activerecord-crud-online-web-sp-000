@@ -35,7 +35,7 @@ end
 
 def can_get_the_first_item_in_the_database
   #Movie.all.first.title
-  Movie.first.title
+  Movie.first
 end
 
 def can_get_the_last_item_in_the_database
