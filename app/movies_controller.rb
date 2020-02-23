@@ -27,7 +27,8 @@ def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
   # If no arguments are passed, use default values:
   # title == "Home Alone"
   # release_date == 1990
-   #new_args = args.each {|key, value| self.send(("#{key}="), value)}
+  binding.pry
+   new_args = args.each {|key, value| self.send(("#{key}="), value)}
 
   Movie.create do |m|
     m.title = "Home Alone"
